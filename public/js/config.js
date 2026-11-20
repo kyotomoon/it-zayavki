@@ -1,6 +1,6 @@
 /*
- * Адрес API. Пусто — сайт сам выберет адрес локального json-server (http://127.0.0.1:3000/api).
- * Если API выложен в интернет (например, на Render), впишите его адрес с /api на конце:
- *   const API_URL = 'https://it-zayavki-api.onrender.com/api';
+ * Адрес API (json-server).
+ * Пусто — сайт сам найдёт сервер: локальный (http://127.0.0.1:3000) или на том же сайте (Render).
+ * На Netlify своего сервера нет, поэтому данные берутся с json-server на Render.
  */
-const API_URL = '';
+const API_URL = location.hostname.endsWith('netlify.app') ? 'https://it-zayavki.onrender.com/api' : '';
