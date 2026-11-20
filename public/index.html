@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT-Заявки — учёт заявок в IT-отдел</title>
+  <meta name="description" content="Информационная система учёта заявок сотрудников в IT-отдел">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt=""><span>IT-Заявки<small>учёт заявок в IT-отдел</small></span></a>
+      <nav class="nav" id="nav">
+        <a href="#top" class="active">Главная</a>
+        <a href="#features">Возможности</a>
+        <a href="#how">Как это работает</a>
+        <a href="#categories">Категории</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav-only-mobile" href="app.html">Войти в систему</a>
+      </nav>
+      <div class="header-actions">
+        <span id="theme-slot"></span>
+        <a class="btn btn-outline" href="app.html">Войти</a>
+        <a class="btn" href="app.html">Подать заявку</a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Первый экран -->
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            Сервис IT-отдела компании
+          </span>
+          <h1>Заявки в IT-отдел —<br>быстро и <span>без потерь</span></h1>
+          <p class="lead">Сотрудник оставляет заявку за минуту, специалист сразу видит её в своём списке, а администратор распределяет работу и следит за сроками. Без звонков и сообщений в мессенджерах.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-lg" href="app.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              Подать заявку</a>
+            <a class="btn btn-lg btn-outline" href="#how">Как это работает</a>
+          </div>
+          <ul class="checks">
+            <li>Статус заявки виден сразу</li>
+            <li>Сроки по приоритету</li>
+            <li>Работает на телефоне</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h3>Последние заявки <span class="muted">обновлено сейчас</span></h3>
+          <div id="last-tickets"><div class="loader">Загрузка…</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Цифры из базы -->
+    <section class="stats-strip">
+      <div class="container" id="stats">
+        <div class="stat-box"><b>—</b>заявок в базе</div>
+        <div class="stat-box"><b>—</b>уже выполнено</div>
+        <div class="stat-box"><b>—</b>специалиста IT</div>
+        <div class="stat-box"><b>—</b>категорий проблем</div>
+      </div>
+    </section>
+
+    <!-- Возможности -->
+    <section class="section section-tint" id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Возможности для каждой роли</h2>
+          <p>В системе три роли. У каждой свой личный кабинет и свои права.</p>
+        </div>
+        <div class="cards-3">
+          <article class="feature">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3>Сотрудник</h3>
+            <p>Подаёт заявку за минуту и видит, на каком она этапе.</p>
+            <ul class="check-list"><li>Создание заявки с файлом</li><li>Статус и история изменений</li><li>Переписка со специалистом</li></ul>
+          </article>
+          <article class="feature">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <h3>Специалист IT-отдела</h3>
+            <p>Видит назначенные ему заявки и меняет их статус.</p>
+            <ul class="check-list"><li>Фильтры по статусу и приоритету</li><li>Смена статуса в один клик</li><li>Контроль сроков выполнения</li></ul>
+          </article>
+          <article class="feature">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+            <h3>Администратор</h3>
+            <p>Распределяет заявки и следит за загрузкой отдела.</p>
+            <ul class="check-list"><li>Назначение исполнителя</li><li>Пользователи и справочники</li><li>Статистика по заявкам</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="section section-white" id="how">
+      <div class="container">
+        <div class="section-title">
+          <h2>Как это работает</h2>
+          <p>Четыре шага от проблемы до её решения</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><h3>Войдите в систему</h3><p>Под своей рабочей почтой и паролем</p></li>
+          <li class="step"><h3>Опишите проблему</h3><p>Тема, категория, приоритет, описание и скриншот</p></li>
+          <li class="step"><h3>Специалист возьмёт заявку</h3><p>Администратор назначит исполнителя</p></li>
+          <li class="step"><h3>Следите за статусом</h3><p>Новая → В работе → Выполнена</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Категории (загружаются из базы) -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-title">
+          <h2>С чем можно обратиться</h2>
+          <p>Выберите категорию при создании заявки, так её быстрее направят нужному специалисту</p>
+        </div>
+        <div class="cat-grid" id="cat-grid"><div class="loader">Загрузка…</div></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta">
+          <div><h2>Что-то сломалось?</h2><p>Оставьте заявку, специалист IT-отдела возьмёт её в работу.</p></div>
+          <a class="btn btn-lg" href="app.html">Подать заявку</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div>
+        <a class="logo" href="index.html"><img src="img/logo.svg" alt=""><span>IT-Заявки<small>учёт заявок в IT-отдел</small></span></a>
+        <p>Информационная система учёта заявок в IT-отдел. Помогает не терять обращения сотрудников и контролировать сроки их выполнения.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#features">Возможности</a>
+        <a href="#how">Как это работает</a>
+        <a href="#categories">Категории</a>
+        <a href="app.html">Вход в систему</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>IT-отдел: доб. 100<br><a href="mailto:it@firma.ru" style="display:inline">it@firma.ru</a><br>Пн–Пт, 9:00–18:00</p>
+      </div>
+      <div class="footer-bottom">© 2026 ИС «IT-Заявки» · Курсовой проект, группа ИСП-0039А</div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

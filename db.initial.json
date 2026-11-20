@@ -1,0 +1,818 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Сотрудник"
+    },
+    {
+      "id": 2,
+      "name": "Специалист IT-отдела"
+    },
+    {
+      "id": 3,
+      "name": "Администратор"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "IT-отдел"
+    },
+    {
+      "id": 2,
+      "name": "Бухгалтерия"
+    },
+    {
+      "id": 3,
+      "name": "Отдел кадров"
+    },
+    {
+      "id": 4,
+      "name": "Отдел продаж"
+    },
+    {
+      "id": 5,
+      "name": "Администрация"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Смирнова Анна Викторовна",
+      "email": "smirnova@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-01",
+      "roleId": 3,
+      "departmentId": 1
+    },
+    {
+      "id": 2,
+      "fullName": "Козлов Дмитрий Андреевич",
+      "email": "kozlov@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-02",
+      "roleId": 2,
+      "departmentId": 1
+    },
+    {
+      "id": 3,
+      "fullName": "Новиков Артём Сергеевич",
+      "email": "novikov@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-03",
+      "roleId": 2,
+      "departmentId": 1
+    },
+    {
+      "id": 4,
+      "fullName": "Морозова Елена Игоревна",
+      "email": "morozova@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-04",
+      "roleId": 2,
+      "departmentId": 1
+    },
+    {
+      "id": 5,
+      "fullName": "Иванов Сергей Петрович",
+      "email": "ivanov@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-05",
+      "roleId": 1,
+      "departmentId": 2
+    },
+    {
+      "id": 6,
+      "fullName": "Петрова Мария Александровна",
+      "email": "petrova@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-06",
+      "roleId": 1,
+      "departmentId": 2
+    },
+    {
+      "id": 7,
+      "fullName": "Соколов Игорь Николаевич",
+      "email": "sokolov@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-07",
+      "roleId": 1,
+      "departmentId": 4
+    },
+    {
+      "id": 8,
+      "fullName": "Волкова Ольга Дмитриевна",
+      "email": "volkova@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-08",
+      "roleId": 1,
+      "departmentId": 3
+    },
+    {
+      "id": 9,
+      "fullName": "Лебедев Павел Олегович",
+      "email": "lebedev@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-09",
+      "roleId": 1,
+      "departmentId": 4
+    },
+    {
+      "id": 10,
+      "fullName": "Кузнецова Татьяна Юрьевна",
+      "email": "kuznetsova@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-10",
+      "roleId": 1,
+      "departmentId": 3
+    },
+    {
+      "id": 11,
+      "fullName": "Фёдоров Николай Васильевич",
+      "email": "fedorov@firma.ru",
+      "password": "test123",
+      "phone": "+7 (916) 101-11-11",
+      "roleId": 1,
+      "departmentId": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Оборудование",
+      "description": "Компьютеры, мониторы, клавиатуры, мыши и другая техника"
+    },
+    {
+      "id": 2,
+      "name": "Программное обеспечение",
+      "description": "Установка, обновление и ошибки программ"
+    },
+    {
+      "id": 3,
+      "name": "Сеть и интернет",
+      "description": "Нет доступа к сети, интернету или общим папкам"
+    },
+    {
+      "id": 4,
+      "name": "Печать и сканирование",
+      "description": "Принтеры, сканеры, МФУ и картриджи"
+    },
+    {
+      "id": 5,
+      "name": "Учётные записи и доступ",
+      "description": "Пароли, права доступа, новые учётные записи"
+    },
+    {
+      "id": 6,
+      "name": "Прочее",
+      "description": "Вопросы, которые не подходят под другие категории"
+    }
+  ],
+  "priorities": [
+    {
+      "id": 1,
+      "name": "Низкий",
+      "level": 1,
+      "deadlineHours": 72
+    },
+    {
+      "id": 2,
+      "name": "Средний",
+      "level": 2,
+      "deadlineHours": 24
+    },
+    {
+      "id": 3,
+      "name": "Высокий",
+      "level": 3,
+      "deadlineHours": 8
+    },
+    {
+      "id": 4,
+      "name": "Критический",
+      "level": 4,
+      "deadlineHours": 2
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "name": "Новая"
+    },
+    {
+      "id": 2,
+      "name": "В работе"
+    },
+    {
+      "id": 3,
+      "name": "Ожидает ответа"
+    },
+    {
+      "id": 4,
+      "name": "Выполнена"
+    },
+    {
+      "id": 5,
+      "name": "Отклонена"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Не включается компьютер",
+      "description": "После выходных компьютер не включается, индикатор питания не горит.",
+      "createdAt": "2026-09-14T09:05:00",
+      "updatedAt": "2026-09-14T11:35:00",
+      "authorId": 5,
+      "executorId": 2,
+      "categoryId": 1,
+      "priorityId": 3,
+      "statusId": 4
+    },
+    {
+      "id": 2,
+      "title": "Установить 1С:Бухгалтерия 8.3",
+      "description": "Нужна программа 1С на новый рабочий ноутбук.",
+      "createdAt": "2026-09-15T10:30:00",
+      "updatedAt": "2026-09-15T15:30:00",
+      "authorId": 6,
+      "executorId": 3,
+      "categoryId": 2,
+      "priorityId": 2,
+      "statusId": 4
+    },
+    {
+      "id": 3,
+      "title": "Нет интернета в кабинете 214",
+      "description": "Во всём кабинете не открываются сайты, почта не работает.",
+      "createdAt": "2026-09-16T08:50:00",
+      "updatedAt": "2026-09-16T10:00:00",
+      "authorId": 7,
+      "executorId": 4,
+      "categoryId": 3,
+      "priorityId": 4,
+      "statusId": 4
+    },
+    {
+      "id": 4,
+      "title": "Принтер печатает полосами",
+      "description": "HP LaserJet в бухгалтерии печатает с серыми полосами.",
+      "createdAt": "2026-09-17T13:15:00",
+      "updatedAt": "2026-09-18T13:15:00",
+      "authorId": 6,
+      "executorId": 2,
+      "categoryId": 4,
+      "priorityId": 1,
+      "statusId": 4
+    },
+    {
+      "id": 5,
+      "title": "Сбросить пароль от почты",
+      "description": "Забыла пароль от корпоративной почты.",
+      "createdAt": "2026-09-18T09:40:00",
+      "updatedAt": "2026-09-18T10:05:00",
+      "authorId": 8,
+      "executorId": 3,
+      "categoryId": 5,
+      "priorityId": 3,
+      "statusId": 4
+    },
+    {
+      "id": 6,
+      "title": "Создать учётную запись для нового сотрудника",
+      "description": "С 1 октября выходит новый менеджер, нужна почта и доступ к CRM.",
+      "createdAt": "2026-09-22T11:00:00",
+      "updatedAt": "2026-09-23T14:00:00",
+      "authorId": 9,
+      "executorId": 3,
+      "categoryId": 5,
+      "priorityId": 2,
+      "statusId": 4
+    },
+    {
+      "id": 7,
+      "title": "Не открываются файлы в общей папке",
+      "description": "При открытии папки «Отчёты» пишет «Отказано в доступе».",
+      "createdAt": "2026-09-24T14:20:00",
+      "updatedAt": "2026-09-24T15:55:00",
+      "authorId": 10,
+      "executorId": 4,
+      "categoryId": 3,
+      "priorityId": 2,
+      "statusId": 4
+    },
+    {
+      "id": 8,
+      "title": "Установить игру на рабочий компьютер",
+      "description": "Прошу установить игру для отдыха в обед.",
+      "createdAt": "2026-09-25T12:10:00",
+      "updatedAt": "2026-09-25T13:10:00",
+      "authorId": 9,
+      "executorId": null,
+      "categoryId": 6,
+      "priorityId": 1,
+      "statusId": 5
+    },
+    {
+      "id": 9,
+      "title": "Медленно работает компьютер",
+      "description": "Компьютер долго загружается, программы зависают.",
+      "createdAt": "2026-09-29T10:00:00",
+      "updatedAt": "2026-09-29T13:20:00",
+      "authorId": 11,
+      "executorId": 2,
+      "categoryId": 1,
+      "priorityId": 2,
+      "statusId": 3
+    },
+    {
+      "id": 10,
+      "title": "Не работает сканер на МФУ",
+      "description": "МФУ Canon в отделе кадров печатает, но не сканирует.",
+      "createdAt": "2026-10-01T09:30:00",
+      "updatedAt": "2026-10-01T10:00:00",
+      "authorId": 8,
+      "executorId": 4,
+      "categoryId": 4,
+      "priorityId": 2,
+      "statusId": 2
+    },
+    {
+      "id": 11,
+      "title": "Ошибка при запуске Excel",
+      "description": "При открытии Excel появляется ошибка лицензии.",
+      "createdAt": "2026-10-01T15:45:00",
+      "updatedAt": "2026-10-01T16:30:00",
+      "authorId": 5,
+      "executorId": 3,
+      "categoryId": 2,
+      "priorityId": 2,
+      "statusId": 2
+    },
+    {
+      "id": 12,
+      "title": "Не работает телефония в отделе продаж",
+      "description": "Не проходят входящие звонки, клиенты не могут дозвониться.",
+      "createdAt": "2026-10-02T08:35:00",
+      "updatedAt": "2026-10-02T08:40:00",
+      "authorId": 7,
+      "executorId": 2,
+      "categoryId": 3,
+      "priorityId": 4,
+      "statusId": 2
+    },
+    {
+      "id": 13,
+      "title": "Заменить клавиатуру",
+      "description": "На клавиатуре западают клавиши.",
+      "createdAt": "2026-10-02T16:00:00",
+      "updatedAt": "2026-10-02T16:00:00",
+      "authorId": 10,
+      "executorId": null,
+      "categoryId": 1,
+      "priorityId": 1,
+      "statusId": 1
+    },
+    {
+      "id": 14,
+      "title": "Подключить второй монитор",
+      "description": "Нужен второй монитор для работы с таблицами.",
+      "createdAt": "2026-10-03T10:20:00",
+      "updatedAt": "2026-10-03T10:20:00",
+      "authorId": 6,
+      "executorId": null,
+      "categoryId": 1,
+      "priorityId": 1,
+      "statusId": 1
+    },
+    {
+      "id": 15,
+      "title": "Выдать доступ к программе «Контур.Диадок»",
+      "description": "Нужен доступ для отправки электронных документов.",
+      "createdAt": "2026-10-05T08:15:00",
+      "updatedAt": "2026-10-05T08:15:00",
+      "authorId": 5,
+      "executorId": null,
+      "categoryId": 5,
+      "priorityId": 2,
+      "statusId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "ticketId": 1,
+      "userId": 2,
+      "text": "Подойду в течение получаса, проверю блок питания.",
+      "createdAt": "2026-09-14T09:30:00"
+    },
+    {
+      "id": 2,
+      "ticketId": 1,
+      "userId": 2,
+      "text": "Заменил блок питания, компьютер работает.",
+      "createdAt": "2026-09-14T11:30:00"
+    },
+    {
+      "id": 3,
+      "ticketId": 1,
+      "userId": 5,
+      "text": "Спасибо, всё включилось.",
+      "createdAt": "2026-09-14T11:45:00"
+    },
+    {
+      "id": 4,
+      "ticketId": 2,
+      "userId": 3,
+      "text": "Нужен номер лицензии, уточню у администратора.",
+      "createdAt": "2026-09-15T11:35:00"
+    },
+    {
+      "id": 5,
+      "ticketId": 2,
+      "userId": 3,
+      "text": "1С установлена, база подключена.",
+      "createdAt": "2026-09-15T15:25:00"
+    },
+    {
+      "id": 6,
+      "ticketId": 3,
+      "userId": 4,
+      "text": "Проверяю коммутатор на этаже.",
+      "createdAt": "2026-09-16T09:05:00"
+    },
+    {
+      "id": 7,
+      "ticketId": 3,
+      "userId": 4,
+      "text": "Перезагрузила коммутатор, связь восстановлена.",
+      "createdAt": "2026-09-16T09:58:00"
+    },
+    {
+      "id": 8,
+      "ticketId": 3,
+      "userId": 7,
+      "text": "Интернет появился, спасибо!",
+      "createdAt": "2026-09-16T10:10:00"
+    },
+    {
+      "id": 9,
+      "ticketId": 4,
+      "userId": 2,
+      "text": "Скорее всего, закончился картридж. Закажу новый.",
+      "createdAt": "2026-09-17T17:20:00"
+    },
+    {
+      "id": 10,
+      "ticketId": 5,
+      "userId": 3,
+      "text": "Временный пароль отправлен по SMS, смените его при входе.",
+      "createdAt": "2026-09-18T10:02:00"
+    },
+    {
+      "id": 11,
+      "ticketId": 4,
+      "userId": 2,
+      "text": "Картридж заменён.",
+      "createdAt": "2026-09-18T13:10:00"
+    },
+    {
+      "id": 12,
+      "ticketId": 6,
+      "userId": 3,
+      "text": "Пришлите ФИО и должность нового сотрудника.",
+      "createdAt": "2026-09-22T13:55:00"
+    },
+    {
+      "id": 13,
+      "ticketId": 6,
+      "userId": 9,
+      "text": "Ковалёв Андрей, менеджер по продажам.",
+      "createdAt": "2026-09-23T11:50:00"
+    },
+    {
+      "id": 14,
+      "ticketId": 6,
+      "userId": 3,
+      "text": "Учётная запись и доступ к CRM созданы.",
+      "createdAt": "2026-09-23T13:55:00"
+    },
+    {
+      "id": 15,
+      "ticketId": 7,
+      "userId": 4,
+      "text": "Добавила вас в группу «Отдел кадров», доступ есть.",
+      "createdAt": "2026-09-24T15:50:00"
+    },
+    {
+      "id": 16,
+      "ticketId": 8,
+      "userId": 1,
+      "text": "Установка игр запрещена правилами компании.",
+      "createdAt": "2026-09-25T13:08:00"
+    },
+    {
+      "id": 17,
+      "ticketId": 9,
+      "userId": 2,
+      "text": "Нужно заменить жёсткий диск на SSD. Согласуйте покупку, пожалуйста.",
+      "createdAt": "2026-09-29T13:15:00"
+    },
+    {
+      "id": 18,
+      "ticketId": 9,
+      "userId": 11,
+      "text": "Покупку согласую до конца недели.",
+      "createdAt": "2026-09-29T14:20:00"
+    },
+    {
+      "id": 19,
+      "ticketId": 10,
+      "userId": 4,
+      "text": "Переустанавливаю драйвер сканера.",
+      "createdAt": "2026-10-01T10:05:00"
+    },
+    {
+      "id": 20,
+      "ticketId": 11,
+      "userId": 3,
+      "text": "Проверяю активацию Microsoft Office.",
+      "createdAt": "2026-10-01T16:35:00"
+    },
+    {
+      "id": 21,
+      "ticketId": 12,
+      "userId": 2,
+      "text": "Связался с провайдером, ждём ответа.",
+      "createdAt": "2026-10-02T08:43:00"
+    },
+    {
+      "id": 22,
+      "ticketId": 12,
+      "userId": 7,
+      "text": "Сколько ещё ждать? Теряем клиентов.",
+      "createdAt": "2026-10-02T09:15:00"
+    }
+  ],
+  "statusHistory": [
+    {
+      "id": 1,
+      "ticketId": 1,
+      "statusId": 1,
+      "userId": 5,
+      "changedAt": "2026-09-14T09:05:00"
+    },
+    {
+      "id": 2,
+      "ticketId": 1,
+      "statusId": 2,
+      "userId": 2,
+      "changedAt": "2026-09-14T09:25:00"
+    },
+    {
+      "id": 3,
+      "ticketId": 1,
+      "statusId": 4,
+      "userId": 2,
+      "changedAt": "2026-09-14T11:35:00"
+    },
+    {
+      "id": 4,
+      "ticketId": 2,
+      "statusId": 1,
+      "userId": 6,
+      "changedAt": "2026-09-15T10:30:00"
+    },
+    {
+      "id": 5,
+      "ticketId": 2,
+      "statusId": 2,
+      "userId": 3,
+      "changedAt": "2026-09-15T11:30:00"
+    },
+    {
+      "id": 6,
+      "ticketId": 2,
+      "statusId": 4,
+      "userId": 3,
+      "changedAt": "2026-09-15T15:30:00"
+    },
+    {
+      "id": 7,
+      "ticketId": 3,
+      "statusId": 1,
+      "userId": 7,
+      "changedAt": "2026-09-16T08:50:00"
+    },
+    {
+      "id": 8,
+      "ticketId": 3,
+      "statusId": 2,
+      "userId": 4,
+      "changedAt": "2026-09-16T09:00:00"
+    },
+    {
+      "id": 9,
+      "ticketId": 3,
+      "statusId": 4,
+      "userId": 4,
+      "changedAt": "2026-09-16T10:00:00"
+    },
+    {
+      "id": 10,
+      "ticketId": 4,
+      "statusId": 1,
+      "userId": 6,
+      "changedAt": "2026-09-17T13:15:00"
+    },
+    {
+      "id": 11,
+      "ticketId": 4,
+      "statusId": 2,
+      "userId": 2,
+      "changedAt": "2026-09-17T17:15:00"
+    },
+    {
+      "id": 12,
+      "ticketId": 5,
+      "statusId": 1,
+      "userId": 8,
+      "changedAt": "2026-09-18T09:40:00"
+    },
+    {
+      "id": 13,
+      "ticketId": 5,
+      "statusId": 2,
+      "userId": 3,
+      "changedAt": "2026-09-18T09:45:00"
+    },
+    {
+      "id": 14,
+      "ticketId": 5,
+      "statusId": 4,
+      "userId": 3,
+      "changedAt": "2026-09-18T10:05:00"
+    },
+    {
+      "id": 15,
+      "ticketId": 4,
+      "statusId": 4,
+      "userId": 2,
+      "changedAt": "2026-09-18T13:15:00"
+    },
+    {
+      "id": 16,
+      "ticketId": 6,
+      "statusId": 1,
+      "userId": 9,
+      "changedAt": "2026-09-22T11:00:00"
+    },
+    {
+      "id": 17,
+      "ticketId": 6,
+      "statusId": 2,
+      "userId": 3,
+      "changedAt": "2026-09-22T13:00:00"
+    },
+    {
+      "id": 18,
+      "ticketId": 6,
+      "statusId": 3,
+      "userId": 3,
+      "changedAt": "2026-09-22T14:00:00"
+    },
+    {
+      "id": 19,
+      "ticketId": 6,
+      "statusId": 2,
+      "userId": 3,
+      "changedAt": "2026-09-23T12:00:00"
+    },
+    {
+      "id": 20,
+      "ticketId": 6,
+      "statusId": 4,
+      "userId": 3,
+      "changedAt": "2026-09-23T14:00:00"
+    },
+    {
+      "id": 21,
+      "ticketId": 7,
+      "statusId": 1,
+      "userId": 10,
+      "changedAt": "2026-09-24T14:20:00"
+    },
+    {
+      "id": 22,
+      "ticketId": 7,
+      "statusId": 2,
+      "userId": 4,
+      "changedAt": "2026-09-24T15:00:00"
+    },
+    {
+      "id": 23,
+      "ticketId": 7,
+      "statusId": 4,
+      "userId": 4,
+      "changedAt": "2026-09-24T15:55:00"
+    },
+    {
+      "id": 24,
+      "ticketId": 8,
+      "statusId": 1,
+      "userId": 9,
+      "changedAt": "2026-09-25T12:10:00"
+    },
+    {
+      "id": 25,
+      "ticketId": 8,
+      "statusId": 5,
+      "userId": 1,
+      "changedAt": "2026-09-25T13:10:00"
+    },
+    {
+      "id": 26,
+      "ticketId": 9,
+      "statusId": 1,
+      "userId": 11,
+      "changedAt": "2026-09-29T10:00:00"
+    },
+    {
+      "id": 27,
+      "ticketId": 9,
+      "statusId": 2,
+      "userId": 2,
+      "changedAt": "2026-09-29T11:30:00"
+    },
+    {
+      "id": 28,
+      "ticketId": 9,
+      "statusId": 3,
+      "userId": 2,
+      "changedAt": "2026-09-29T13:20:00"
+    },
+    {
+      "id": 29,
+      "ticketId": 10,
+      "statusId": 1,
+      "userId": 8,
+      "changedAt": "2026-10-01T09:30:00"
+    },
+    {
+      "id": 30,
+      "ticketId": 10,
+      "statusId": 2,
+      "userId": 4,
+      "changedAt": "2026-10-01T10:00:00"
+    },
+    {
+      "id": 31,
+      "ticketId": 11,
+      "statusId": 1,
+      "userId": 5,
+      "changedAt": "2026-10-01T15:45:00"
+    },
+    {
+      "id": 32,
+      "ticketId": 11,
+      "statusId": 2,
+      "userId": 3,
+      "changedAt": "2026-10-01T16:30:00"
+    },
+    {
+      "id": 33,
+      "ticketId": 12,
+      "statusId": 1,
+      "userId": 7,
+      "changedAt": "2026-10-02T08:35:00"
+    },
+    {
+      "id": 34,
+      "ticketId": 12,
+      "statusId": 2,
+      "userId": 2,
+      "changedAt": "2026-10-02T08:40:00"
+    },
+    {
+      "id": 35,
+      "ticketId": 13,
+      "statusId": 1,
+      "userId": 10,
+      "changedAt": "2026-10-02T16:00:00"
+    },
+    {
+      "id": 36,
+      "ticketId": 14,
+      "statusId": 1,
+      "userId": 6,
+      "changedAt": "2026-10-03T10:20:00"
+    },
+    {
+      "id": 37,
+      "ticketId": 15,
+      "statusId": 1,
+      "userId": 5,
+      "changedAt": "2026-10-05T08:15:00"
+    }
+  ]
+}
